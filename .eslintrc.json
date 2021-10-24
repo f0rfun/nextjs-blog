@@ -1,28 +1,30 @@
 {
     "env": {
-        "browser": true,
-        "es2021": true
-    },
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 13,
-        "sourceType": "module"
-    },
-    "plugins": [
-        "react"
-    ],
-    "rules": {
-    },
-    "settings":{
-        "react": {
-            "version": "latest"
-        }
+        "es6": true,
+        "jest": true
     },
     "extends": [
-        "plugin:react/recommended",
-        "google",
+        "standard",
+        "eslint-config-prettier",
+        "plugin:prettier/recommended",
+        "eslint:recommended",
         "prettier"
-    ]
+    ],
+    "plugins": [
+        "@typescript-eslint",
+        "prettier",
+        "sonarjs"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 9,
+        "sourceType": "module"
+    },
+    "rules": {
+        "prettier/prettier": [
+            "error",
+            {
+                "trailingComma": "none"
+            }
+        ]
+    }
 }

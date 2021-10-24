@@ -7,6 +7,19 @@ import Link from 'next/link'
 const name = 'Your Name'
 export const siteTitle = 'Next.js Sample Website'
 
+const Foreigner = class {
+    constructor(data) {
+    this._dateOfBirth = data.dateOfBirth
+  }
+
+  get dob() {
+    return this._dateOfBirth
+  }
+}
+
+export { Foreigner }
+
+
 export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>

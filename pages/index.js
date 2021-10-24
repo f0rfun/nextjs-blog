@@ -26,12 +26,11 @@ export default function Home({ allPostsData }) {
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
         </p>
         <h1 className="title">
-  Read{' '}
-  <Link href="/posts/20210628">
-    <a>this page!</a>
-  </Link>
-</h1>
-
+          Read{' '}
+          <Link href="/posts/20210628">
+            <a>this page!</a>
+          </Link>
+        </h1>
       </section>
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
         <h2 className={utilStyles.headingLg}>Blog</h2>
@@ -46,7 +45,7 @@ export default function Home({ allPostsData }) {
             </li>
           ))}
         </ul>
-      </section>      
+      </section>
     </Layout>
   )
 }
