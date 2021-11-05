@@ -3,17 +3,18 @@
         "es6": true,
         "jest": true
     },
+    "parser": "@typescript-eslint/parser",
     "extends": [
         "standard",
         "eslint-config-prettier",
         "plugin:prettier/recommended",
         "eslint:recommended",
+        "plugin:@typescript-eslint/recommended",
         "prettier"
     ],
     "plugins": [
         "@typescript-eslint",
-        "prettier",
-        "sonarjs"
+        "prettier"
     ],
     "parserOptions": {
         "ecmaVersion": 9,
