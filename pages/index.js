@@ -8,8 +8,8 @@ export default function Home () {
       <Head>
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingLg}>
-        <h2>Happy 10th Birthday, Skye!</h2>
+      <section>
+        {/* Add description, center align before posts */}
       </section>
     </Layout>
   );

@@ -30,6 +30,7 @@ export default function Layout ({ children, home }) {
                             alt=""
                         />
                         <h1 className={utilStyles.heading2Xl}>{name}</h1>
+                        <h1 className={utilStyles.headingLg}>Happy 10th Birthday, Skye!</h1>
                     </>
                 ) : (
                     <>
