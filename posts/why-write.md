@@ -7,7 +7,7 @@ date: '2023-04-07'
 
 We **don't** need a reason to. In the event you do need some:
 
-- Just because we can. Being able to write is a priviledge. 
+- Just because we can. Being able to write is a privilege. 
 - How else are we suppose to articulate our thoughts?
 - It takes time and practice to be able to write well. 
 

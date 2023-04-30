@@ -44,14 +44,15 @@ module.exports = {
 /* harmony export */ });
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(997);
 /* harmony import */ var react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'date-fns'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(4146);
+/* harmony import */ var date_fns__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(date_fns__WEBPACK_IMPORTED_MODULE_1__);
 
 
 function Date({ dateString  }) {
-    const date = Object(function webpackMissingModule() { var e = new Error("Cannot find module 'date-fns'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(dateString);
+    const date = (0,date_fns__WEBPACK_IMPORTED_MODULE_1__.parseISO)(dateString);
     return /*#__PURE__*/ react_jsx_runtime__WEBPACK_IMPORTED_MODULE_0__.jsx("time", {
         dateTime: dateString,
-        children: Object(function webpackMissingModule() { var e = new Error("Cannot find module 'date-fns'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(date, "LLLL d, yyyy")
+        children: (0,date_fns__WEBPACK_IMPORTED_MODULE_1__.format)(date, "LLLL d, yyyy")
     });
 }
 
@@ -165,9 +166,10 @@ function Layout({ children , home  }) {
 /***/ }),
 
 /***/ 2479:
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
+__webpack_require__.a(module, async (__webpack_handle_async_dependencies__, __webpack_async_result__) => { try {
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "AU": () => (/* binding */ getPostData),
 /* harmony export */   "Le": () => (/* binding */ getAllPostIds),
@@ -177,9 +179,12 @@ function Layout({ children , home  }) {
 /* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1017);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'gray-matter'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'remark'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
-Object(function webpackMissingModule() { var e = new Error("Cannot find module 'remark-html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }());
+/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8076);
+/* harmony import */ var gray_matter__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(gray_matter__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var remark__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1774);
+/* harmony import */ var remark_html__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7740);
+var __webpack_async_dependencies__ = __webpack_handle_async_dependencies__([remark__WEBPACK_IMPORTED_MODULE_3__, remark_html__WEBPACK_IMPORTED_MODULE_4__]);
+([remark__WEBPACK_IMPORTED_MODULE_3__, remark_html__WEBPACK_IMPORTED_MODULE_4__] = __webpack_async_dependencies__.then ? (await __webpack_async_dependencies__)() : __webpack_async_dependencies__);
 
 
 
@@ -196,7 +201,7 @@ function getSortedPostsData() {
         const fullPath = path__WEBPACK_IMPORTED_MODULE_1___default().join(postsDirectory, fileName);
         const fileContents = fs__WEBPACK_IMPORTED_MODULE_0___default().readFileSync(fullPath, "utf8");
         // Use gray-matter to parse the post metadata section
-        const matterResult = Object(function webpackMissingModule() { var e = new Error("Cannot find module 'gray-matter'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(fileContents);
+        const matterResult = gray_matter__WEBPACK_IMPORTED_MODULE_2___default()(fileContents);
         // Combine the data with the id
         return {
             id,
@@ -239,9 +244,9 @@ async function getPostData(id) {
     const fullPath = path__WEBPACK_IMPORTED_MODULE_1___default().join(postsDirectory, `${id}.md`);
     const fileContents = fs__WEBPACK_IMPORTED_MODULE_0___default().readFileSync(fullPath, "utf8");
     // Use gray-matter to parse the post metadata section
-    const matterResult = Object(function webpackMissingModule() { var e = new Error("Cannot find module 'gray-matter'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())(fileContents);
+    const matterResult = gray_matter__WEBPACK_IMPORTED_MODULE_2___default()(fileContents);
     // Use remark to convert markdown into HTML string
-    const processedContent = await Object(function webpackMissingModule() { var e = new Error("Cannot find module 'remark'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())().use(Object(function webpackMissingModule() { var e = new Error("Cannot find module 'remark-html'"); e.code = 'MODULE_NOT_FOUND'; throw e; }())).process(matterResult.content);
+    const processedContent = await (0,remark__WEBPACK_IMPORTED_MODULE_3__.remark)().use(remark_html__WEBPACK_IMPORTED_MODULE_4__["default"]).process(matterResult.content);
     const contentHtml = processedContent.toString();
     // Combine the data with the id
     return {
@@ -251,6 +256,8 @@ async function getPostData(id) {
     };
 }
 
+__webpack_async_result__();
+} catch(e) { __webpack_async_result__(e); } });
 
 /***/ })
 
