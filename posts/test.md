@@ -2,4 +2,5 @@
 title: 'I lost my money'
 date: '2023-04-30'
 ---
-My dad wants me to write 200 words just because I lost some money. 
+My dad made me write 200 words just because I lost some money. I was playing freeze tag during recess. I did not want to carry my wallet while running so I just put it down on the floor at the side. I usually do that and nobody ever took the money so I thought it was okay. After we finished playing, I went over to get my wallet but it was not there. I remembered that my friend once took my other friend's wallet so I went to ask him whether he took it and he said no. So I thought okay, maybe somebody found it. Maybe they returned it to the office? I will check during lunch. During lunch, I went to the canteen lost-and-found and it was not there. Then one of my classmates informed me that lost wallets ended up in the general office so I went there. Behold. The wallet was there, but when I checked inside, no money.💸 So now I have to write 200 words. 
+In future, I am not bringing my wallet to school. I will just eat my snack in my lunch box so there is no need for money. Take that,Whoever took my money! You won't be stealing it again. 
